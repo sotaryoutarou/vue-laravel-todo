@@ -1,0 +1,21 @@
+/usr/sbin/mysqld, Version: 8.0.17 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2019-09-01T10:41:35.671960+09:00	    7 Connect	
+2019-09-01T10:41:35.672973+09:00	    7 Query	SELECT @@skip_networking, @@skip_name_resolve, @@have_ssl='YES', @@ssl_key, @@ssl_ca, @@ssl_capath, @@ssl_cert, @@ssl_cipher, @@ssl_crl, @@ssl_crlpath, @@tls_version
+2019-09-01T10:41:35.678794+09:00	    7 Quit	
+2019-09-01T10:52:12.684995+09:00	    8 Connect	homestead@172.19.0.2 on homestead using TCP/IP
+2019-09-01T10:52:12.686479+09:00	    8 Query	use `homestead`
+2019-09-01T10:52:12.687622+09:00	    8 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2019-09-01T10:52:12.687849+09:00	    8 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2019-09-01T10:52:12.688167+09:00	    8 Close stmt	
+2019-09-01T10:52:12.688472+09:00	    8 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2019-09-01T10:52:12.688674+09:00	    8 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2019-09-01T10:52:12.688975+09:00	    8 Close stmt	
+2019-09-01T10:52:12.702498+09:00	    8 Prepare	select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'
+2019-09-01T10:52:12.710280+09:00	    8 Execute	select * from information_schema.tables where table_schema = 'homestead' and table_name = 'migrations' and table_type = 'BASE TABLE'
+2019-09-01T10:52:12.716015+09:00	    8 Close stmt	
+2019-09-01T10:52:12.738615+09:00	    8 Prepare	select `migration` from `migrations` order by `batch` asc, `migration` asc
+2019-09-01T10:52:12.738989+09:00	    8 Execute	select `migration` from `migrations` order by `batch` asc, `migration` asc
+2019-09-01T10:52:12.747802+09:00	    8 Close stmt	
+2019-09-01T10:52:12.757256+09:00	    8 Quit	
